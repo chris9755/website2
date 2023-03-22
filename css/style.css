@@ -17,6 +17,86 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  background-color: #ddd;
+  width: 100%;
+  height: 10vh;
+}
+
+.nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-items a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  color: royalblue;
+  display: none;
+  transition: 0.7s;
+}
+
+.nav-items a:hover {
+  color: rgb(38, 185, 94);
+}
+
+.burger-icon {
+  color: royalblue;
+  position: absolute;
+  right: 10px;
+  display: flex;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
+@media (min-width: 576px) {
+  .burger-icon {
+    display: none;
+  }
+  .nav-items a {
+    display: flex;
+  }
+}
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/woman-g90cf27030_640.jpg");
+  background-size: cover;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+  position: absolute;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
